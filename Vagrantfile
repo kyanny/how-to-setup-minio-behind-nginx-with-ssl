@@ -6,5 +6,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "00apt.sh"
   config.vm.provision "shell", path: "01nginx.sh"
   config.vm.provision "shell", path: "02cert.sh"
-  config.vm.provision "shell", path: "03minio.sh"
+  config.vm.provision "shell", path: "03nginx.sh"
+  config.vm.provision "shell", path: "04minio.sh"
 end
