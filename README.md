@@ -6,11 +6,6 @@ The purpose is that being able to reproduce this setup easily.
 
 Suppose these shell scripts are used in Ubuntu Linux.
 
-- `00apt.sh`: run `apt update && upgrade`. For a newly created Ubuntu instance.
-- `01nginx.sh`: install and start nginx.
-- `02cert.sh`: create a self-signed certificate and setup nginx with the cert.
-- `03minio.sh`: setup and start MinIO server.
-
 Simply use Vagrant.
 
 ```
