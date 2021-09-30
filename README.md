@@ -15,7 +15,9 @@ Simply use Vagrant.
 
 ```
 vagrant up
+
 vagrant ssh
+curl --cacert /etc/ssl/certs/sample.crt https://example.local
 ```
 
 Or donwload the repo and run scripts respectively.
@@ -23,8 +25,5 @@ Or donwload the repo and run scripts respectively.
 ```
 git clone https://github.com/kyanny/how-to-setup-minio-behind-nginx-with-ssl scripts
 cd scripts/
-bash 00apt.sh
-bash 01nginx.sh
-bash 02cert.sh
-bash 03minio.sh
+ls *.sh | xargs -I {} bash {}
 ```
